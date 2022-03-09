@@ -1,0 +1,57 @@
+@font-face {
+    font-family: cairo;
+    src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: cairo;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+/* assign-1 */
+
+/* div[class~="red"]:not(div[class~="red"]:nth-child(3)){
+    color: red;
+} */
+
+/* end of assign-1 */
+
+
+
+/* assign-2 */
+
+/* .parent:first-of-type div:nth-child(2) {
+    color: red;
+}
+.parent:first-of-type div:nth-last-of-type(1) {
+    color: green;
+}
+.parent:first-of-type div:nth-last-child(1) {
+    color: blue;
+}
+.parent:first-of-type div:not(:first-child) {
+    color: purple;
+}
+.parent:first-of-type div:nth-child(even) {
+    color: yellow;
+} */
+
+/* end of assign-2 */
+
+
+
+/* assign-3 */
+
+/* .parent:nth-child(2) div:only-child {
+    color: red;
+} */
+
+/* end of assign-3 */
+
+div:nth-child(n+4):nth-child(-n+6){
+    color: red;
+}

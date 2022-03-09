@@ -1,0 +1,58 @@
+/* .l9 {
+  background-color: #ddd;
+  padding: 50px 110px;
+  width: 70%;
+  margin: auto;
+  border: 10px solid red;
+} */
+
+/* .l10 {
+  background-color: #ddd;
+  padding: 50px 110px;
+  width: 70%;
+  margin: auto;
+  border: 10px solid red;
+  outline: 10px solid #000;
+} */
+
+/*
+    Block
+        take full width if no width
+        Add line break
+        Respect padding,margin,height and width 
+*/
+
+/*
+    inline
+        Does not add a line break
+        Does not Respect width and height
+        Respect padding and margin [just left and right]
+*/
+/*
+    inline-block
+        Allow Elements Before And After It
+        Respect padding,margin,height and width 
+
+*/
+/*11*/
+/* span {
+  display: inline-block;
+  background-color: #ddd;
+  padding: 20px;
+  margin-left: 50px;
+}
+div {
+  margin: 50px;
+  background-color: #ddd;
+  padding: 20px;
+} */
+
+/*12*/
+div {
+  background-color: #ddd;
+  margin: 10px 0;
+}
+.none {
+  /* display: none; */
+  visibility: hidden;
+}

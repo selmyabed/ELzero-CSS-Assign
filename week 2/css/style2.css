@@ -1,0 +1,44 @@
+/*
+    text shadow
+    syntax => text-shadow H-shadow v-shadow blur color
+*/
+
+/* h1 {
+  background-color: #ccc;
+  color: aqua;
+  margin: 20px auto;
+  width: fit-content;
+
+  text-shadow: 2px 1px 1px red, -2px -1px 1px green, 0px 1px 1px blue;
+} */
+
+/*-----------------------------------------------------*/
+
+/* div {
+  background-color: #ddd;
+  text-align: center;
+  direction: ltr;
+}
+
+div img {
+  vertical-align: middle;
+} */
+/*-----------------------------------------------------*/
+
+/* div {
+  background-color: #ddd;
+  text-align: center;
+  direction: ltr;
+  padding: 10px 50px;
+  text-decoration: underline;
+  text-transform: uppercase;
+} */
+/*-----------------------------------------------------*/
+div {
+  background-color: #ddd;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px auto;
+}

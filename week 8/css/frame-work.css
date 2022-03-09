@@ -1,0 +1,32 @@
+@font-face {
+    font-family: cairo;
+    src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+.font-cairo {
+    font-family: cairo;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-positio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle-200 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

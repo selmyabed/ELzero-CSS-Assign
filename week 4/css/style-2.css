@@ -1,0 +1,40 @@
+@font-face {
+  font-family: cairo;
+  src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: cairo, fantasy;
+}
+
+/*
+    X-shadow | Y-shadow | blur | spread | color | inset
+*/
+
+.radius {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background-color: #d4d4d4;
+  border-top-left-radius: 20px 50px;
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 20px 50px;
+  border-bottom-left-radius: 60%;
+  box-shadow: 4px 3px 6px 0px rgb(0 0 0 / 30%);
+}
+
+.parent {
+  width: 600px;
+  padding: 20px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.one {
+  width: 300px;
+  background-color: #eee;
+  padding: 50px;
+  float: left;
+  border: 10px solid red;
+  box-sizing: border-box;
+}

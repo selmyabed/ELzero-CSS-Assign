@@ -1,0 +1,33 @@
+/* .parent .child .title {
+  color: red;
+} */
+.parent .child span {
+  color: red;
+}
+
+/* .parent span {
+  color: blue;
+} */
+.parent .title {
+  color: blue;
+}
+
+.parent p,
+body .title {
+  color: green;
+}
+
+/* div.title {
+  color: green;
+} */
+
+.assign-2 div {
+  background-color: brown;
+  color: #000;
+  padding: 10px;
+  margin: 20px 0 0;
+  width: fit-content;
+  max-width: 400px;
+  max-height: 60px;
+  overflow: hidden;
+}

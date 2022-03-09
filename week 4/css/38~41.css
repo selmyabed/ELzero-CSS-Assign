@@ -1,0 +1,159 @@
+@font-face {
+  font-family: cairo;
+  src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/*
+    box-shadow :
+        X-shadow | Y-shadow | blur | spread | color | inset #2196f3
+*/
+
+.assign-1 {
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.assign-1 div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: #eee;
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border: 2px solid black;
+  box-shadow: -5px -5px 0 0 #e91e63, 5px 5px 0 0 #2196f3;
+  counter-increment: counter;
+  box-sizing: border-box;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.assign-1 div::after {
+  content: "element";
+  text-transform: capitalize;
+  position: absolute;
+  /* top: 50%;
+  margin-top: -15px; */
+  line-height: 6;
+  left: 50%;
+  margin-left: -28px;
+}
+
+.assign-1 div::before {
+  content: counter(counter);
+  background-color: black;
+  position: absolute;
+  color: #fff;
+  padding: 0 4.7px;
+  top: -9.1px;
+  left: 50%;
+  margin-left: -9.145px;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.assign-2 div {
+  height: 100px;
+  width: 100px;
+  margin: 50px auto;
+  background-color: #eee;
+  box-shadow: 0 0 15px 0 #000 inset;
+
+  border-top-left-radius: 10px 20px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 10px 20px;
+}
+
+.assign-3 {
+  width: 550px;
+  text-align: center;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.assign-3 .one {
+  float: left;
+  width: 40%;
+  background-color: #eee;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 10%;
+  position: relative;
+}
+
+.assign-3 .one:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #2196f3;
+  top: 0;
+  right: -27.5px;
+}
+
+.assign-3 .one::after {
+  content: "or";
+  position: absolute;
+  padding: 5px;
+  background-color: #2196f3;
+  color: #fff;
+  top: 50%;
+  margin-top: -14px;
+  right: -42px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.assign-3 .one h3 {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 15px 0;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.assign-3 .one .price {
+  width: 100%;
+  background-color: #ddd;
+  text-align: center;
+
+  font-size: 2.1rem;
+  padding: 70px 0;
+  /* height: 180px;
+  line-height: 6; */
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}

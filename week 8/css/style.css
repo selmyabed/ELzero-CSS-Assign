@@ -1,0 +1,392 @@
+@font-face {
+    font-family: cairo;
+    src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cairo;
+}
+
+i {
+    position: absolute;
+    bottom: 10%;
+    left: 51%;
+    font-size: 50px;
+    animation-name: down;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes down {
+   
+    to {
+        transform: translateY(20px);
+    }
+}
+
+.assign-1 {
+    height: 100vh;
+}
+.assign-1 div {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid #e91e63;
+    border-left-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    animation-name: rotating;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+.assign-1 div:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(350deg);
+    }
+}
+
+.assign-1 div::after {
+    content: '';
+    position: absolute;
+    height: calc(100% + 30px);
+    width: calc(100% + 30px);
+    border: 10px solid #2490c9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    border-right-color: transparent;
+}
+
+.assign-1 div::before {
+    content: '';
+    position: absolute;
+    height: calc(100% + 60px);
+    width: calc(100% + 60px);
+    border: 10px solid #e49b00;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    border-top-color: transparent;
+}
+
+h1 {
+    position: absolute;
+    top: 34%;
+    left: 40%;
+    width: fit-content;
+    padding: 20px;
+    background-color: #EEE;
+    border-radius: 5px;
+}
+
+h1::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 30px solid ;
+    position: absolute;
+    bottom: -60px;
+    right: 10%;
+    border-color: #EEE transparent transparent transparent;
+}
+
+
+
+.assign-2 {
+    height: 100vh;
+    position: relative;
+}
+
+
+.assign-2 div {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid #2490c9;
+    border-bottom-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    animation-name: rotating-2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    
+
+}
+.assign-2 div:hover {
+    animation-play-state: running;
+}
+
+
+@keyframes rotating-2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(350deg);
+    }
+}
+
+.assign-2 div::after {
+    content: '';
+    position: absolute;
+    height: calc(100% + 30px);
+    width: calc(100% + 30px);
+    border: 10px solid #e49b00;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    
+   
+}
+
+.assign-2 div::before {
+    content: '';
+    position: absolute;
+    height: calc(100% + 60px);
+    width: calc(100% + 60px);
+    border: 10px solid #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    
+}
+
+
+
+.assign-3 {
+    height: 100vh;
+    position: relative;
+}
+
+
+.assign-3 span {
+    display: block;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid #000;
+    border-bottom-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    animation-name: rotating-3;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+
+}
+
+@keyframes rotating-3 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(350deg);
+    }
+}
+
+
+
+
+.up {
+    position: absolute;
+    bottom: 10%;
+    left: 51%;
+    font-size: 50px;
+    transform: rotate(180deg);
+    animation-name: up;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+ @keyframes up {
+   
+    to {
+        margin-bottom: 30px;
+    }
+} 
+
+
+
+section {
+    background-color: #CCC;
+    width: fit-content;
+    
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    
+}
+
+section .e {
+    width: fit-content;
+    margin-right: 50px;
+    position: relative;
+   display: grid;
+   grid-template-columns: 80px 250px;
+   grid-template-rows: repeat(7, 80px);
+
+}
+section .e .one {
+    grid-column: 2 ;
+    background-color: black;
+}
+section .e .two {
+    grid-column: 2 ;
+    grid-row: 4;
+    background-color: black;
+}
+section .e .three {
+    grid-column: 2 ;
+    grid-row: 7;
+    background-color: black;
+}
+section .e .four {
+    grid-column: 1 ;
+    grid-row: 1/ span 7;
+    background-color: black;
+}
+
+section .e span {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color:#e49b00;
+    right: 15px;
+    top: 15px;
+    display: inline-block;
+    animation-name: span-one;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-delay: 10s;
+}
+
+@keyframes span-one {
+    
+     20% {
+        right: 265px;
+        top: 15px;
+        
+     }
+
+     30% {
+        right: 265px;
+         top: 255px;
+     }
+
+     40% {
+         right: 15px;
+         top: 255px;
+     }
+     50% {
+        right: 265px;
+         top: 255px;
+     }
+     60% {
+        right: 265px;
+         top: 495px;
+     }
+     70% {
+        right: 15px;
+         top: 495px;
+     }
+     80% {
+        right: 265px;
+         top: 495px;
+     }
+     90% {
+        right: 265px;
+         top: 15px;
+     }
+
+    }
+
+
+section .l {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 80px 250px;
+    grid-template-rows: 1fr 80px;
+    position: relative;
+}
+section .l span {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color:#e49b00;
+    right: 15px;
+    bottom: 15px;
+    animation-name: span-two;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes span-two {
+
+  
+    10% {
+        right: 265px;
+        bottom: 15px;
+    }
+    50% {
+        right: 265px;
+        bottom: 500px;
+        
+    }
+   
+    100% {
+        top: 15px;
+        opacity: 0;
+    }
+}
+
+
+section .l .one {
+    grid-column: 1;
+    grid-row: 1 / span 1;
+    background-color: black;
+}
+section .l .two {
+    grid-column: 1 / span 2;
+    grid-row: 2 ;
+    background-color: black;
+}

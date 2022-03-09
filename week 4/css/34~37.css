@@ -1,0 +1,125 @@
+@font-face {
+  font-family: cairo;
+  src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: cairo, fantasy;
+}
+hr {
+  margin-top: 20px;
+}
+.assign-1 div {
+  background-color: #eee;
+  width: 300px;
+  height: 60px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 3.5;
+}
+
+.assign-1 div:empty {
+  background-color: red;
+}
+
+.assign-2 div {
+  background-color: #d4d4d4;
+  padding: 15px 0;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+
+.assign-2 div::first-letter {
+  background-color: red;
+  padding: 5px 10px;
+  color: #fff;
+  margin-left: -15px;
+}
+
+/* .assign-2 div::before {
+  content: "1";
+  position: absolute;
+  background-color: red;
+  color: #fff;
+  width: 20px;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  left: -10px;
+  top: 50%;
+  margin-top: -25px;
+} */
+
+/* .assign-2 div::first-letter {
+  visibility: hidden;
+} */
+
+.assign-3 p {
+  position: relative;
+  padding: 10px 0;
+  padding-left: 20px;
+  width: 400px;
+  background-color: #eee;
+  border-left: 5px solid #e91e63;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.assign-3 p::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #e91e63 transparent transparent;
+  left: -25px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.assign-3 p::before {
+  position: absolute;
+  content: attr(data-person);
+  padding: 10px 15px;
+  width: 50px;
+  text-align: center;
+  background-color: #ccc;
+  top: 50%;
+  left: -105px;
+  margin-top: -25px;
+}
+
+.assign-4 p {
+  padding: 10px;
+  width: 400px;
+  background-color: #eee;
+  margin: auto;
+  margin-bottom: 10px;
+  position: relative;
+  counter-increment: counter;
+}
+
+.assign-4 p::before {
+  content: counter(counter);
+  background-color: #f44336;
+  padding: 10px 20px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  margin-top: -25px;
+}
+
+.assign-4 p::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: #f44336;
+  right: -5px;
+  top: 0;
+}

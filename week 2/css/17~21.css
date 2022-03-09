@@ -1,0 +1,47 @@
+h1 {
+  text-transform: capitalize;
+  text-shadow: 0.75px 0.75px 0 red, 1px 1px 0 blue, 1.25px 1.25px 0 purple;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.one {
+  text-transform: uppercase;
+}
+.two {
+  text-transform: capitalize;
+}
+.three {
+  text-transform: lowercase;
+}
+
+.assin3 div {
+  background-color: #eee;
+  padding: 20px;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.assin3 .one-3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+a {
+  display: block;
+
+  color: #fff;
+  background-color: #009688;
+
+  margin: 20px auto;
+  padding: 10px 20px;
+
+  width: fit-content;
+
+  border-bottom: 5px solid #00514a;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+}

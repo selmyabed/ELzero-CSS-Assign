@@ -1,0 +1,383 @@
+@font-face {
+  font-family: cairo;
+  src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: cairo;
+}
+
+.assign-1 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  gap: 15px;
+}
+
+.assign-1 .grid div {
+  background-color: #607d8b;
+  color: #fff;
+  padding: 10px 0;
+  counter-increment: counter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assign-1 .grid div::after {
+  content: "element " counter(counter);
+  text-transform: capitalize;
+}
+
+.assign-2 .layout {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to top, #f44336, #673ab7);
+  color: #fff;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 5% 1fr 5%;
+  grid-template-areas:
+    "header header header header header header header header header header"
+    "cont cont cont cont cont cont cont cont side side"
+    "footer footer footer footer footer footer footer footer footer footer";
+}
+
+.assign-2 .layout header {
+  grid-area: header;
+  background-color: #03a9f4;
+  padding: 10px 30px;
+}
+.assign-2 .layout header::after {
+  content: "Header";
+}
+.assign-2 .layout section {
+  grid-area: cont;
+  background-color: #ff5722;
+  padding: 10px 30px;
+}
+.assign-2 .layout section::after {
+  content: "Section";
+}
+.assign-2 .layout aside {
+  grid-area: side;
+  background-color: #607d8b;
+  padding: 10px 30px;
+}
+.assign-2 .layout aside::after {
+  content: "SideBar";
+}
+.assign-2 .layout footer {
+  grid-area: footer;
+  background-color: #009688;
+  padding: 10px 30px;
+}
+.assign-2 .layout footer::after {
+  content: "Footer";
+}
+
+.assign-3 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  color: #fff;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr) auto;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+}
+
+.assign-3 .grid div {
+  background-color: #403f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assign-4 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  /* grid-template-areas:
+    "full full full full full full full full full full"
+    "two two two two two two three three three three"
+    " four four four four  five five five five five five "
+    " six six six six five five five five five five"
+    "seven seven seven seven five five five five five five"
+    "one one one one one one one one one one"; */
+
+  gap: 10px;
+}
+
+.assign-4 .grid div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+}
+
+.assign-4 .grid .one {
+  grid-row-start: 6;
+  grid-column: span 10;
+}
+
+.assign-4 .grid .eight {
+  grid-row-start: 1;
+  grid-column: span 10;
+}
+
+.assign-4 .grid .two {
+  grid-row-start: 2;
+  grid-column: span 6;
+}
+
+.assign-4 .grid .three {
+  grid-row-start: 2;
+  grid-column: span 4;
+}
+
+.assign-4 .grid .four {
+  grid-row-start: 3;
+  grid-column: span 4;
+}
+
+.assign-4 .grid .five {
+  grid-row-start: 3;
+  grid-row-end: 6;
+  grid-column: span 6;
+}
+
+.assign-4 .grid .six {
+  grid-row-start: 4;
+  grid-column: span 4;
+}
+
+.assign-4 .grid .seven {
+  grid-row-start: 5;
+  grid-column: span 4;
+}
+
+/* .assign-4 .grid .eight {
+  grid-area: full;
+}
+
+.assign-4 .grid .two {
+  grid-area: two;
+}
+.assign-4 .grid .three {
+  grid-area: three;
+}
+.assign-4 .grid .four {
+  grid-area: four;
+}
+.assign-4 .grid .six {
+  grid-area: six;
+}
+.assign-4 .grid .seven {
+  grid-area: seven;
+}
+
+.assign-4 .grid .five {
+  grid-area: five;
+}
+
+.assign-4 .grid .one {
+  grid-area: one;
+} */
+
+.assign-5 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  align-content: space-between;
+  gap: 20px;
+}
+
+.assign-5 .grid div {
+  background-color: #e91e63;
+}
+
+.assign-6 .parent {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: #eee;
+  padding: 30px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  gap: 15px 15px;
+  z-index: 0;
+}
+.osama {
+  grid-area: 1 / 1 / span 3 / span 2;
+}
+
+.ahmed {
+  grid-area: 1 / 3 / span 3 / 3;
+}
+
+.shady {
+  grid-area: 1 / 4 / span 11 / 5;
+}
+
+.mohammed {
+  grid-area: 4 / 1 / span 8 / 1;
+}
+
+.mahmoud {
+  grid-area: 4 / 2 / span 4 / span 2;
+}
+
+.ezz {
+  grid-area: 8 / 2 / span 4 / span 2;
+}
+
+.sayed {
+  grid-area: 12 / 1 / span 2 / 1;
+}
+
+.ibrahim {
+  grid-area: 12 / 2 / span 2 / 2;
+}
+
+.gamal {
+  grid-area: 12 / 3 / span 2 / 3;
+}
+
+.eman {
+  grid-area: 12 / 4 / span 2 / 4;
+}
+
+/* .assign-6 .parent .osama {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+}
+.assign-6 .parent .ahmed {
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 1;
+}
+.assign-6 .parent .shady {
+  grid-row: 1 / span 8;
+  grid-column: 4 / span 1;
+  color: #fff;
+  background-color: #000;
+}
+.assign-6 .parent .mohammed {
+  grid-row: 3 / span 6;
+  grid-column: 1;
+  color: #fff;
+  background-color: #000;
+}
+.assign-6 .parent .mahmoud {
+  grid-row: 3 / span 3;
+  grid-column: 2 / span 2;
+}
+.assign-6 .parent .ezz {
+  grid-row: 6 / span 3;
+  grid-column: 2 / span 2;
+}
+.assign-6 .parent .sayed {
+  grid-row: 9 / span 2;
+  grid-column: 1;
+}
+.assign-6 .parent .ibrahim {
+  grid-row: 9 / span 2;
+  grid-column: 2;
+  color: #fff;
+  background-color: #000;
+}
+.assign-6 .parent .gamal {
+  grid-row: 9 / span 2;
+  grid-column: 3;
+}
+.assign-6 .parent .eman {
+  grid-row: 9 / span 2;
+  grid-column: 4;
+} */
+
+.assign-6 .parent section {
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.assign-6 .parent section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    to right,
+    #2980b9 20%,
+    #27ae60 20%,
+    #27ae60 40%,
+    #d35400 40%,
+    #d35400 60%,
+    #8e44ad 60%,
+    #8e44ad 80%,
+    #c0392b 80%
+  );
+}
+
+.assign-6 .parent section h3 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.assign-6 .parent section h4 {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  font-weight: 100;
+  color: #a8a8a8;
+}
+.assign-6 .parent section article {
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.assign-6 .parent section .art-edited {
+  font-weight: 600;
+}

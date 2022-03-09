@@ -1,0 +1,67 @@
+@font-face {
+    font-family: cairo;
+    src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: cairo;
+}
+
+
+.arrow {
+    position: relative;
+    width: 300px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #EEE;
+}
+.arrow.top::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-color: transparent transparent #EEE transparent;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+}
+.arrow.right::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-color: transparent transparent  transparent #eee;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.arrow.bottom::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-color: #EEE transparent transparent  transparent ;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.arrow.left::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-color:  transparent #EEE transparent  transparent ;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+
+}

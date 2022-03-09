@@ -1,0 +1,67 @@
+@font-face {
+  font-family: cairo;
+  src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+/* body {
+  font-family: cairo, sans-serif;
+} */
+
+.parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+  counter-increment: counter;
+}
+
+.one {
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+.user {
+  background-color: #eee;
+  width: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* .one .line {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: #3f51b5;
+  top: 0;
+  right: -10px;
+} */
+
+.one::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 20px;
+  border-style: solid;
+  border-color: transparent #3f51b5 transparent transparent;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.one::after {
+  content: counter(counter);
+  position: absolute;
+  background-color: #3f51b5;
+  color: #fff;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  top: 50%;
+  margin-top: -10px;
+}

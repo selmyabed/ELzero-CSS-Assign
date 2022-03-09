@@ -1,0 +1,241 @@
+@font-face {
+  font-family: cairo;
+  src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: cairo, sans-serif;
+}
+/* #03a9f4 */
+.assign-1 div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  color: #ff5722;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  /* box-shadow: -5px 0 0 0 #03a9f4, 5px 0 0 0 #ff5722; */
+  border-right: 5px solid #03a9f4;
+  border-left: 5px solid #ff5722;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.assign-2 .parent {
+  width: 600px;
+  height: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #eee;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.assign-2 .parent div {
+  padding: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  width: calc(94% / 3);
+}
+/* #607d8b */
+.assign-3 .parent {
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.assign-3 .parent div {
+  background-color: #607d8b;
+  width: calc(94% / 3);
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assign-3 .parent .one {
+  align-self: flex-end;
+  order: 6;
+}
+.assign-3 .parent .two {
+  order: 5;
+}
+.assign-3 .parent .three {
+  align-self: flex-start;
+  order: 2;
+}
+.assign-3 .parent .four {
+  order: 3;
+}
+.assign-3 .parent .five {
+  order: 4;
+}
+.assign-3 .parent .six {
+  order: 1;
+}
+
+.assign-4 .parent {
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.assign-4 .parent div {
+  background-color: #009688;
+  color: white;
+  padding: 20px;
+}
+
+.assign-4 .parent .two {
+  align-self: flex-start;
+  width: 50%;
+}
+
+.assign-5 .parent {
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.assign-5 .parent div {
+  background-color: rgba(88, 38, 38, 0.425);
+  /* width: calc((85%) / 4);
+  height: calc((100%) / 2); */
+  padding: 50px 40px;
+  color: #fff;
+}
+
+.assign-5 .parent .one {
+  order: 2;
+  background-color: #ff9800;
+}
+.assign-5 .parent .two {
+  order: 3;
+  background-color: #8bc34a;
+}
+.assign-5 .parent .three {
+  order: 4;
+  background-color: #795548;
+}
+.assign-5 .parent .four {
+  order: 1;
+  background-color: #673ab7;
+}
+
+.assign-5 .parent .two,
+.assign-5 .parent .four {
+  align-self: flex-end;
+}
+
+:root {
+  --pageColor: #eee;
+  --mainColor: #ddd;
+  --mainPadding: 2%;
+  --mainMargin: 2%;
+}
+.assign-6 .page {
+  padding: var(--mainPadding, 2%);
+  background-color: var(--pageColor, #eee);
+}
+
+.assign-6 .page .header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--mainMargin, 2%);
+}
+
+.assign-6 .header .logo {
+  text-align: center;
+  background-color: var(--mainColor, #ddd);
+  width: 8%;
+  padding: var(--mainPadding, 2%);
+}
+.assign-6 .header .links {
+  list-style-type: none;
+  text-align: center;
+  background-color: var(--mainColor, #ddd);
+  padding: var(--mainPadding, 2%);
+  width: 90%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.assign-6 .header .links li {
+  margin: 0 10px;
+}
+
+.assign-6 .page .main-area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--mainMargin, 2%);
+}
+
+.assign-6 .page .main-area div {
+  background-color: var(--mainColor, #ddd);
+  padding: var(--mainPadding, 2%);
+  height: 750px;
+}
+
+.assign-6 .page .main-area .content {
+  width: 74%;
+}
+
+.assign-6 .page .main-area .sidebar {
+  width: 24%;
+}
+
+.assign-6 .page .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--mainColor, #ddd);
+  padding: var(--mainPadding, 2%);
+}

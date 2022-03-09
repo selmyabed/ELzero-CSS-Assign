@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "cairo";
+  src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: "cairo";
+}
+
+.parent {
+  background-color: red;
+  padding: 10px;
+}
+
+.parent div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #eee;
+  width: 25%;
+  float: left;
+}
+.clear {
+  clear: both;
+}

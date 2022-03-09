@@ -1,0 +1,15 @@
+div {
+  background-color: red;
+  padding: 10px;
+  /* display: inline-block;
+  width: 400px;
+  max-height: 60px; */
+  width: fit-content;
+}
+.over {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  background-color: #eee;
+  overflow-y: hidden;
+}

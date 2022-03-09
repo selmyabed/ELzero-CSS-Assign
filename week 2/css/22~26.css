@@ -1,0 +1,47 @@
+html {
+  font-size: 20px;
+}
+.assign-1 {
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  border: 2px solid orange;
+  width: 400px;
+  margin: 1px auto;
+}
+
+.assign-1 p {
+  background-color: #eee;
+  padding: inherit;
+  border: inherit;
+}
+
+.assign-2 .one {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-style: oblique;
+  text-transform: capitalize;
+}
+.assign-2 .two {
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.assign-2 .three {
+  font-family: "Jomhuria", cursive;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.assign-3 .one {
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+.assign-3 .two {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.assign-3 .three {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}

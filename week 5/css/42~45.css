@@ -1,0 +1,77 @@
+@font-face {
+  font-family: cairo;
+  src: url(../../fonts/Cairo-VariableFont_wght.ttf);
+}
+
+body {
+  font-family: cairo;
+}
+
+.parent {
+  height: 300px;
+  border: 1px solid red;
+}
+.assign-1 {
+  padding: 10px;
+  width: 500px;
+  height: 200px;
+  margin: 50px auto;
+  text-transform: capitalize;
+  background-color: #eee;
+  text-align: center;
+  transition: margin-top 0.5s ease-in-out;
+  -webkit-transition: margin-top 0.5s ease-in-out;
+  -moz-transition: margin-top 0.5s ease-in-out;
+  -ms-transition: margin-top 0.5s ease-in-out;
+  -o-transition: margin-top 0.5s ease-in-out;
+}
+.assign-1:hover {
+  margin-top: 30px;
+}
+
+.assign-1 .child {
+  padding: 10px;
+  background-color: #ddd;
+  margin-top: 10px;
+  transition: margin-top 0.5s 0.5s ease-in-out;
+  -webkit-transition: margin-top 0 0.5s 0.5s ease-in-out;
+  -moz-transition: margin-top 0.5s 0.5s ease-in-out;
+  -ms-transition: margin-top 0.5s 0.5s ease-in-out;
+  -o-transition: margin-top 0.5s 0.5s ease-in-out;
+}
+
+.assign-1:hover .child {
+  margin-top: 20px;
+}
+
+.assign-2 div {
+  visibility: hidden;
+  margin: auto;
+  text-align: center;
+  background-color: #eee !important;
+  color: black !important;
+  font-size: 20px !important;
+  width: 400px !important;
+  border: none !important;
+}
+
+.assign-2 div::after {
+  content: "elzero";
+  visibility: visible;
+  text-transform: capitalize;
+  background-color: #eee !important;
+  color: black !important;
+  font-size: 20px !important;
+  width: 400px !important;
+  border: none !important;
+  padding: 20px;
+  display: block;
+}
+
+.assign-3 div {
+  padding: var(--mainPadding, 10px);
+  border: 2px solid var(--mainColor, black);
+  color: var(--mainColor, red);
+  margin-bottom: var(--mainPadding, 10px);
+  width: 500px;
+}
